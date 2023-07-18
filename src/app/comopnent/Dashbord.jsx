@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-// import { RiHome2Line, RiChat4Line, RiSpaceShipLine} from 'react-icons/ri';
+import Link from 'next/link';
 import { AiFillVideoCamera } from 'react-icons/ai';
 import { AiFillMessage } from 'react-icons/ai';
 import { AiOutlineUser } from 'react-icons/ai';
@@ -54,9 +54,8 @@ const Dashboard = () => {
             </button> */}
 
           </div>
-          <button className="bg-gray-100 text-gray-900 font-semibold py-2 px-4 rounded-3xl ">
-            Logout
-          </button>
+          <Link href="/auth/signin" className="bg-gray-100 text-gray-900 font-semibold py-2 px-4 rounded-3xl">Logout
+</Link>
         </div>
       </nav>
       <div className=' flex'>
@@ -113,18 +112,18 @@ const Dashboard = () => {
           {/* Navigation Buttons */}
           <div className="flex flex-col items-center">
             <button className="bg-gray-900 hover:bg-gray-300 hover:text-gray-900 font-semibold text-white px-2 py-4 w-[70%] rounded-sm mb-4 flex justify-center">
-         <BiGridAlt  className='text-3xl mr-3'/> 
-         <p>template</p>
+         <BiGridAlt  className='text-3xl mr-3 absolute left-[10%]'/> 
+         <p>Template</p>
             </button>
             <button className="bg-gray-900 hover:bg-gray-300 hover:text-gray-900 font-semibold text-white px-2 py-4 w-[70%] rounded-sm mb-4 flex justify-center">
-          <BsClockHistory  className='text-2xl mr-3'/>   <p>  Usage History</p>
+          <BsClockHistory  className='text-2xl mr-3 absolute left-[10%]'/>   <p>  Usage History</p>
             </button>
             <button className="bg-gray-900 hover:bg-gray-300 hover:text-gray-900 font-semibold text-white px-2 py-4 w-[70%] rounded-sm mb-4 flex justify-center">
-           <AiOutlinePieChart className='text-3xl mr-5'/>   
+           <AiOutlinePieChart className='text-3xl mr-5 absolute left-[10%]'/>   
            <p>Analytics</p>
             </button>
             <button className="bg-gray-900 hover:bg-gray-300 hover:text-gray-900 font-semibold text-white px-2 py-4 w-[70%] rounded-sm mb-4 flex justify-center text-center">
-            <FiZap className='text-3xl mr-3'/>
+            <FiZap className='text-3xl mr-3 absolute left-[10%]'/>
             <p>  Carbon GPT</p> 
             </button>
           </div>

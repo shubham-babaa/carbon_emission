@@ -15,9 +15,9 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-[rgba(2,2,23,0.33)] via-[rgba(114,113,159,0.83)] to-#9897CD">
       <h1 className="text-3xl font-bold mb-4">Login Page</h1>
-      <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+      <form className="flex-col  flex flex-wrap gap-1.5 p-10 items-start content-start" onSubmit={handleSubmit}>
         <label htmlFor="email" className="font-medium">
           Email:
         </label>

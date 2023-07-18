@@ -25,3 +25,31 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* @layer utilities {
+  .custom-scrollbar {
+    @apply overflow-y-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply w-8;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-500 rounded-4;
+  }
+} */
+.line-through-text::before {
+  content: "";
+
+  position: absolute;
+  top:42.5%;
+  width: 11%;
+  height: 2px;
+ 
+  background-color: #110101;
+}

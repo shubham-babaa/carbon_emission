@@ -11,18 +11,9 @@ export default function Home() {
   return (
     <main className="  ">
       <MyContextProvider>
-        <div className={`sm:grid sm:grid-cols-8 `}>
-          <div className=" col-span-1">
-            <Navbar />
-
-          </div>
-          <div className=" col-span-6">
+        <div className='bg-gray-700'>
+    
             <BardUI />
-            {/* <Dashbord /> */}
-          </div>
-          {/* <div className="cols-span-1">
-
-        </div> */}
           </div>
 
       </MyContextProvider>
